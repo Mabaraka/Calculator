@@ -11,8 +11,8 @@ public class Separator {
         String x = input[0];
         String y = input[2];
 
-        if (x.matches("\\d\\d")) {
-            if (y.matches("\\d\\d")) {
+        if (x.matches("\\d*")) {
+            if (y.matches("\\d*")) {
                 return Fork.arabicFork(input);
             }
             try {
@@ -22,7 +22,7 @@ public class Separator {
             }
         }
         if (x.matches("XI|X*|V|IV|VI|VII|VIII|IX|I*")) {
-            if (x.matches("XI|X*|V|IV|VI|VII|VIII|IX|I*")) {
+            if (y.matches("XI|X*|V|IV|VI|VII|VIII|IX|I*")) {
                 return Fork.romanFork(input);
             }
             try {
