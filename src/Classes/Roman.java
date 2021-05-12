@@ -34,6 +34,7 @@ public class Roman {
                 case "/":
                     int answer3 = x / y;
                     System.out.println(ArabicToRoman.arabicToRoman(answer3));
+                    break;
                 default:
                     try {
                         throw new IOException("Не соответствует одной из вышеописанных арифметических операций");
